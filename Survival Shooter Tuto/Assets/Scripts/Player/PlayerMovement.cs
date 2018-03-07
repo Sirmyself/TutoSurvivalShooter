@@ -50,21 +50,6 @@ public class PlayerMovement : MonoBehaviour
             rb.MoveRotation(newRotation);
         }
     }
-    /*
-    void Turning()
-    {
-        Ray camRay = Camera.main.ScreenPointToRay(Input.mousePosition);
-        RaycastHit floorHit;
-        
-        if (Physics.Raycast(camRay, out floorHit, camRayLength, floorMask))
-        {
-            Vector3 playerToMouse = floorHit.point - transform.position;
-            playerToMouse.y = 0f;
-            
-            Quaternion newRotation = Quaternion.LookRotation(playerToMouse);
-            playerRigidbody.MoveRotation(newRotation);
-        }
-    }*/
 
     private void Animating(float pHori, float pVerti)
     {
